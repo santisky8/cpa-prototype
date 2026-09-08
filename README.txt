@@ -8,10 +8,15 @@ Full English/French toggle, dark mode, scripted "CPA Assist" chatbot,
 pathway-finder wizard, and a filterable course catalogue (the unified
 CPAstore concept). Language and theme choices persist between pages.
 
-HOW TO PUT IT ONLINE (about 1 minute, free)
-1. Go to https://app.netlify.com/drop
-2. Drag this entire folder onto the page (unzip first if needed)
-3. Netlify gives you a live URL to share with the team
+HOW TO PUT IT ONLINE
+Netlify repository settings:
+- Build command: leave empty
+- Publish directory: .
+- Base directory: leave empty
+
+The included netlify.toml applies these settings automatically when this
+repository is connected to Netlify. The site is also compatible with Netlify
+Drop: upload this folder's contents, including index.html at the top level.
 
 NOTES
 - The chatbot is a scripted demo. The production version would be a real
