@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn & Grow | CPA Canada Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
+<div class="utilbar">
+  <div class="wrap">
+    <a class="ubtn" href="#" data-i18n="login">Login</a>
+    <a class="ubtn" href="#" data-i18n="register">Register</a>
+    <button class="ubtn text" id="langToggle" aria-label="Passer au français">FR</button>
+    <button class="ubtn text" id="themeToggle" aria-pressed="false"><span aria-hidden="true">◐</span>&nbsp;<span data-i18n="dark">Dark</span></button>
+    <form class="usearch" role="search" onsubmit="return false">
+      <label class="skip-link" for="q" data-i18n="searchlabel">Search the site</label>
+      <input id="q" type="search" data-i18n-ph="searchph" placeholder="Search">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+  </div>
+</div>
+
+<div class="navbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img id="logoImg" src="assets/logo-en.png" alt="CPA Chartered Professional Accountants Canada (concept redesign)"><nav class="primary" aria-label="Primary">
+      <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a>
+      <a href="learn.html" aria-current="page" data-i18n="nav2">Learn &amp; Grow</a>
+      <a href="resources.html" data-i18n="nav3">Resources &amp; Guidance</a>
+      <a href="#" data-i18n="nav4">About the Profession</a>
+      <a href="learn.html" class="store" data-i18n="nav5">CPAstore</a>
+    </nav>   </nav>
+  </div>
+</div>
+
+<main id="main">
+<div class="pagehero"><div class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html" data-i18n="home">Home</a> / <span data-i18n="nav2">Learn &amp; Grow</span></nav>
+  <h1 data-i18n="lh1">Learn &amp; Grow</h1>
+  <p data-i18n="llede">One catalogue for everything: professional development, certificates, handbooks and tools, with real filters instead of endless link lists.</p>
+</div></div>
+<section><div class="wrap">
+  <div class="storebanner"><span aria-hidden="true">🛒</span><span data-i18n="lbanner">This catalogue is also the CPAstore, now integrated into the site: same account, same cart, from browsing to checkout.</span></div>
+  <form class="filterbar" onsubmit="return false" aria-label="Filter courses">
+    <input id="fsearch" type="search" data-i18n-ph="lsearchph" placeholder="Search the catalogue" aria-label="Search the catalogue">
+    <select id="ftopic" aria-label="Topic"></select>
+    <select id="fformat" aria-label="Format"></select>
+    <label class="chk"><input id="ffree" type="checkbox"><span data-i18n="lfree">Free only</span></label>
+  </form>
+  <p class="count" id="fcount" aria-live="polite"></p>
+  <div class="coursegrid" id="grid"></div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>CPA Canada <span style="font-size:.65rem;letter-spacing:.1em;opacity:.8">CONCEPT</span></h4>
+        <p style="font-size:.88rem;max-width:34ch" data-i18n="fabout">Supporting, empowering and advocating for more than 200,000 Chartered Professional Accountants.</p>
+      </div>
+      <div>
+        <h4 data-i18n="fnav">Explore</h4>
+        <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a><br>
+        <a href="learn.html" data-i18n="nav2">Learn &amp; Grow</a><br>
+        <a href="learn.html" data-i18n="nav5">CPAstore</a>
+      </div>
+      <div>
+        <h4 data-i18n="fsup">Support</h4>
+        <a href="#" data-i18n="help">Help Centre</a><br>
+        <a href="#" data-i18n="fcontact">Contact us</a><br>
+        <a href="#" data-i18n="faccess">Accessibility</a>
+      </div>
+      <div>
+        <h4 data-i18n="fleg">Legal</h4>
+        <a href="#" data-i18n="fpriv">Privacy</a><br>
+        <a href="#" data-i18n="fterms">Terms of use</a>
+      </div>
+    </div>
+    <p class="fine" data-i18n="fine">Internal concept prototype. Not affiliated with or endorsed by CPA Canada. Placeholder content for demonstration.</p>
+  </div>
+</footer>
+<button class="chat-launch" id="chatLaunch" aria-expanded="false" aria-controls="chatPanel">
+  <span aria-hidden="true">💬</span> <span data-i18n="chatlaunch">Ask CPA Assist</span>
+</button>
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="CPA Assist chatbot">
+  <div class="chat-head"><h3 data-i18n="chath">CPA Assist</h3><p data-i18n="chatsub">Programs, courses, standards. Ask me anything</p></div>
+  <div class="chat-log" id="chatLog" aria-live="polite"></div>
+  <div class="chips" id="chatChips"></div>
+  <div class="chat-input">
+    <input id="chatText" type="text" data-i18n-ph="chatph" placeholder="Type your question…" aria-label="Your question">
+    <button id="chatSend" aria-label="Send">→</button>
+  </div>
+  <p class="chat-demo-note" data-i18n="chatnote">Demo assistant with scripted responses. Production version: AI with live site retrieval.</p>
+</div>
+
+<script>
+window.PAGE_I18N = {
+en:{ home:"Home", lh1:"Learn & Grow",
+  llede:"One catalogue for everything: professional development, certificates, handbooks and tools, with real filters instead of endless link lists.",
+  lbanner:"This catalogue is also the CPAstore, now integrated into the site: same account, same cart, from browsing to checkout.",
+  lsearchph:"Search the catalogue", lfree:"Free only" },
+fr:{ home:"Accueil", lh1:"Apprendre et évoluer",
+  llede:"Un seul catalogue pour tout : perfectionnement professionnel, certificats, manuels et outils, avec de vrais filtres plutôt que des listes de liens interminables.",
+  lbanner:"Ce catalogue est aussi le Magasin CPA, maintenant intégré au site : même compte, même panier, de la consultation au paiement.",
+  lsearchph:"Rechercher dans le catalogue", lfree:"Gratuit seulement" }
+};
+</script>
+<script src="shared.js"></script>
+<script>
+
+const TOPICS = {
+  tax:{en:"Tax",fr:"Fiscalité"}, audit:{en:"Audit & Assurance",fr:"Audit et certification"},
+  finrep:{en:"Financial Reporting",fr:"Information financière"}, tech:{en:"Technology",fr:"Technologie"},
+  sust:{en:"Sustainability",fr:"Durabilité"}, lead:{en:"Leadership",fr:"Leadership"}
+};
+const FORMATS = {
+  ondemand:{en:"On demand",fr:"Sur demande"}, virtual:{en:"Virtual",fr:"Virtuel"},
+  inperson:{en:"In person",fr:"En personne"}, cert:{en:"Certificate program",fr:"Programme de certificat"}
+};
+const TXT = {
+  en:{ all_t:"All topics", all_f:"All formats", hours:"CPD hours", free:"Free",
+       count:function(n,t){return "Showing " + n + " of " + t + " results";},
+       none:"No results. Try removing a filter." },
+  fr:{ all_t:"Tous les sujets", all_f:"Tous les formats", hours:"heures de DPC", free:"Gratuit",
+       count:function(n,t){return n + " résultat(s) sur " + t;},
+       none:"Aucun résultat. Essayez de retirer un filtre." }
+};
+const COURSES = [
+ {t:{en:"In-Depth Tax Program",fr:"Cours fondamental d'impôt"}, d:{en:"Canada's flagship tax training, taught by 200+ technical experts.",fr:"La formation fiscale phare au Canada, offerte par plus de 200 experts."}, topic:"tax", fmt:"cert", h:120, p:3495},
+ {t:{en:"GST/HST Essentials",fr:"L'essentiel de la TPS/TVH"}, d:{en:"Practical fundamentals for indirect tax compliance.",fr:"Les bases pratiques de la conformité en taxes indirectes."}, topic:"tax", fmt:"ondemand", h:8, p:399},
+ {t:{en:"Audit Quality Fundamentals",fr:"Principes de la qualité de l'audit"}, d:{en:"Strengthen engagement quality from planning to reporting.",fr:"Renforcez la qualité des missions, de la planification au rapport."}, topic:"audit", fmt:"virtual", h:12, p:549},
+ {t:{en:"Data Analytics for CPAs",fr:"Analyse de données pour CPA"}, d:{en:"Hands-on analytics skills for finance and assurance work.",fr:"Compétences pratiques en analyse pour la finance et la certification."}, topic:"tech", fmt:"ondemand", h:10, p:449},
+ {t:{en:"AI in the Audit",fr:"L'IA dans l'audit"}, d:{en:"Where AI agents fit in the modern audit and how to supervise them.",fr:"La place des agents d'IA dans l'audit moderne et comment les superviser."}, topic:"tech", fmt:"virtual", h:6, p:349},
+ {t:{en:"IFRS Update 2026",fr:"Mise à jour IFRS 2026"}, d:{en:"What changed this year and what it means for your statements.",fr:"Ce qui a changé cette année et l'impact sur vos états financiers."}, topic:"finrep", fmt:"ondemand", h:4, p:0},
+ {t:{en:"ASPE Essentials",fr:"L'essentiel des NCECF"}, d:{en:"Core private enterprise standards, explained with examples.",fr:"Les normes clés pour entreprises à capital fermé, avec exemples."}, topic:"finrep", fmt:"ondemand", h:6, p:299},
+ {t:{en:"Sustainability Disclosure Standards",fr:"Normes de divulgation en durabilité"}, d:{en:"CSDS 1 and 2 explained for preparers and advisors.",fr:"Les NCID 1 et 2 expliquées aux préparateurs et conseillers."}, topic:"sust", fmt:"virtual", h:8, p:499},
+ {t:{en:"Climate Risk for Finance Leaders",fr:"Risque climatique pour leaders financiers"}, d:{en:"Assess and report climate risk with confidence.",fr:"Évaluez et présentez le risque climatique avec confiance."}, topic:"sust", fmt:"inperson", h:14, p:1195},
+ {t:{en:"Quarterly Economic Update",fr:"Le point économique trimestriel"}, d:{en:"Analysis from our Chief Economist on what moves Canada's economy.",fr:"L'analyse de notre économiste en chef sur l'économie canadienne."}, topic:"lead", fmt:"ondemand", h:2, p:0},
+ {t:{en:"Leading Finance Teams",fr:"Diriger des équipes financières"}, d:{en:"People leadership for controllers, directors and partners.",fr:"Le leadership humain pour contrôleurs, directeurs et associés."}, topic:"lead", fmt:"inperson", h:16, p:1495},
+ {t:{en:"Not-for-Profit Certificate I",fr:"Certificat OSBL I"}, d:{en:"Foundational finance and governance for the NFP sector.",fr:"Finance et gouvernance de base pour le secteur des OSBL."}, topic:"finrep", fmt:"cert", h:40, p:1425}
+];
+function esc(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML;}
+function fillSelects(){
+  const L = window.CUR_LANG();
+  const ft = document.getElementById("ftopic"), ff = document.getElementById("fformat");
+  const tv = ft.value, fv = ff.value;
+  ft.innerHTML = '<option value="">' + esc(TXT[L].all_t) + '</option>' +
+    Object.keys(TOPICS).map(function(k){return '<option value="'+k+'">'+esc(TOPICS[k][L])+'</option>';}).join("");
+  ff.innerHTML = '<option value="">' + esc(TXT[L].all_f) + '</option>' +
+    Object.keys(FORMATS).map(function(k){return '<option value="'+k+'">'+esc(FORMATS[k][L])+'</option>';}).join("");
+  ft.value = tv; ff.value = fv;
+}
+function render(){
+  const L = window.CUR_LANG();
+  const q = document.getElementById("fsearch").value.trim().toLowerCase();
+  const topic = document.getElementById("ftopic").value;
+  const fmt = document.getElementById("fformat").value;
+  const free = document.getElementById("ffree").checked;
+  const hits = COURSES.filter(function(c){
+    if(topic && c.topic !== topic) return false;
+    if(fmt && c.fmt !== fmt) return false;
+    if(free && c.p !== 0) return false;
+    if(q && (c.t[L] + " " + c.d[L]).toLowerCase().indexOf(q) === -1) return false;
+    return true;
+  });
+  document.getElementById("fcount").textContent = TXT[L].count(hits.length, COURSES.length);
+  const grid = document.getElementById("grid");
+  if(!hits.length){ grid.innerHTML = '<p>' + esc(TXT[L].none) + '</p>'; return; }
+  grid.innerHTML = hits.map(function(c){
+    const price = c.p === 0 ? '<span class="cfree">' + esc(TXT[L].free) + '</span>'
+                            : '<span class="cprice">$' + c.p.toLocaleString(L === "fr" ? "fr-CA" : "en-CA") + '</span>';
+    return '<article class="card"><div class="body">' +
+      '<span class="ctag">' + esc(TOPICS[c.topic][L]) + '</span>' +
+      '<h3>' + esc(c.t[L]) + '</h3><p>' + esc(c.d[L]) + '</p>' +
+      '<div class="cmeta"><span>' + esc(FORMATS[c.fmt][L]) + '</span><span>' + c.h + ' ' + esc(TXT[L].hours) + '</span>' + price + '</div>' +
+      '<a class="golink" href="#"><span>' + esc(window.T("learn")) + '</span><span class="arr" aria-hidden="true">→</span></a>' +
+      '</div></article>';
+  }).join("");
+}
+["fsearch","ftopic","fformat","ffree"].forEach(function(id){
+  document.getElementById(id).addEventListener("input", render);
+  document.getElementById(id).addEventListener("change", render);
+});
+document.addEventListener("langchange", function(){ fillSelects(); render(); });
+fillSelects(); render();
+
+</script>
+</body>
+</html>
