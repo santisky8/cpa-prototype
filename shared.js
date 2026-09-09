@@ -173,16 +173,57 @@ function addMsg(text, who){
   log.appendChild(d); log.scrollTop = log.scrollHeight;
 }
 function botSay(text){ setTimeout(function(){addMsg(text,"bot")}, 320); }
+let repositoryContext = "";
+let uploadedContext = "";
+let contextLoaded = false;
+
+function addKnowledgeControls(){
+  const input = document.getElementById("chatText");
+  if(!input || document.getElementById("knowledgeControls")) return;
+  const controls = document.createElement("div");
+  controls.id = "knowledgeControls";
+  controls.className = "knowledge-controls";
+  controls.innerHTML = '<label class="knowledge-upload">Attach files<input id="knowledgeFiles" type="file" multiple accept=".txt,.md,.html,.css,.js,.json,.csv,.xml"></label><button id="loadRepository" type="button">Load repository</button><span id="knowledgeStatus" role="status"></span>';
+  input.closest(".chat-input").before(controls);
+  document.getElementById("knowledgeFiles").addEventListener("change", async function(e){
+    const files = Array.from(e.target.files || []).slice(0, 10);
+    const parts = await Promise.all(files.map(async function(file){ return `FILE: ${file.name}\n${(await file.text()).slice(0, 30000)}`; }));
+    uploadedContext = parts.join("\n\n");
+    document.getElementById("knowledgeStatus").textContent = files.length ? `${files.length} file(s) attached` : "";
+  });
+  document.getElementById("loadRepository").addEventListener("click", loadRepository);
+}
+async function loadRepository(){
+  const status = document.getElementById("knowledgeStatus");
+  status.textContent = "Loading main…";
+  try{
+    const r = await fetch("/.netlify/functions/repository-context");
+    const data = await r.json();
+    if(!r.ok) throw new Error(data.error || "Repository unavailable");
+    repositoryContext = data.documents.map(function(d){return `FILE: ${d.path}\n${d.content}`}).join("\n\n");
+    contextLoaded = true;
+    status.textContent = `${data.documents.length} repository file(s) loaded`;
+  }catch(error){ status.textContent = error.message; }
+}
+async function askAI(question){
+  const context = [repositoryContext, uploadedContext].filter(Boolean).join("\n\n");
+  if(!context && !contextLoaded) return null;
+  const r = await fetch("/.netlify/functions/assistant", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({question, context})});
+  if(!r.ok) return null;
+  const data = await r.json();
+  return data.answer || null;
+}
 function answer(q){
   const n = q.toLowerCase();
   const hit = BOT[lang].find(function(e){return e.k.some(function(k){return n.includes(k)})});
   return hit ? hit.a : merged(lang).chatFallback;
 }
-function send(text){
+async function send(text){
   const q = (text !== undefined ? text : document.getElementById("chatText").value).trim();
   if(!q) return;
   addMsg(q,"user"); document.getElementById("chatText").value = "";
-  botSay(answer(q));
+  const aiAnswer = await askAI(q).catch(function(){ return null; });
+  botSay(aiAnswer || answer(q));
 }
 document.getElementById("chatSend").addEventListener("click", function(){send()});
 document.getElementById("chatText").addEventListener("keydown", function(e){ if(e.key==="Enter") send(); });
@@ -195,4 +236,5 @@ function renderChips(){
   });
 }
 applyLang();
+addKnowledgeControls();
 })();

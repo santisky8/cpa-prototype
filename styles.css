@@ -194,6 +194,11 @@ html.dark .msg.user{color:#101B24}
 .chips button{border:1.5px solid var(--border);background:var(--bg);color:var(--text);border-radius:99px;padding:7px 13px;min-height:36px;font:inherit;font-size:.78rem;font-weight:600;cursor:pointer;transition:border-color .18s}
 .chips button:hover{border-color:var(--green)}
 .chat-input{display:flex;gap:8px;padding:11px;border-top:1.5px solid var(--border)}
+.knowledge-controls{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;padding:.65rem 1rem 0;font-size:.72rem;color:var(--text-muted)}
+.knowledge-controls button,.knowledge-upload{border:1px solid var(--border);background:var(--bg);color:var(--text);padding:.38rem .55rem;cursor:pointer;font:inherit}
+.knowledge-upload input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.knowledge-controls button:hover,.knowledge-upload:hover{border-color:var(--green)}
+#knowledgeStatus{flex:1;min-width:10rem}
 .chat-input input{flex:1;min-height:44px;padding:0 15px;font:inherit;font-size:.9rem;border:1.5px solid var(--border);border-radius:99px;background:var(--bg);color:var(--text)}
 .chat-input button{min-width:44px;min-height:44px;border:none;border-radius:99px;background:var(--green);color:#fff;font-weight:800;cursor:pointer;font-size:1rem}
 html.dark .chat-input button{color:#08240A}
