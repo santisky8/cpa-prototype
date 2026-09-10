@@ -13,10 +13,25 @@ Netlify repository settings:
 - Build command: leave empty
 - Publish directory: .
 - Base directory: leave empty
+- Production branch: `release`
 
 The included netlify.toml applies these settings automatically when this
 repository is connected to Netlify. The site is also compatible with Netlify
 Drop: upload this folder's contents, including index.html at the top level.
+
+RELEASE CADENCE
+Use `main` for local work and set Netlify's production branch to `release`.
+Changes pushed to `main` will not publish the website. When you are ready to
+publish, run this from the repository root no more than once every 48 hours:
+
+  git fetch origin
+  git switch release
+  git merge main
+  git push origin release
+  git switch main
+
+Netlify will deploy only the `release` branch. Change the production branch in
+Netlify under Project configuration > Build & deploy > Continuous deployment.
 
 NOTES
 - The chatbot is a scripted demo by default. The deployed prototype now
