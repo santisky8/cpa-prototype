@@ -59,8 +59,8 @@ html.dark .usearch input,html.dark .usearch button{background:#EDEBE7;color:#264
 /* ============ MAIN NAV (white, real logo) ============ */
 .navbar{background:var(--bg-elevated);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
 .navbar .wrap{display:flex;align-items:center;gap:8px;padding:10px 22px;flex-wrap:wrap}
-.logo{display:flex;align-items:center;min-height:44px;margin-right:12px}
-.logo img{height:62px;width:auto;display:block}
+.logo{display:flex;align-items:center;min-height:54px;margin-right:12px;padding:5px 12px 5px 8px;border-radius:10px;background:linear-gradient(100deg,#fff 0%,#edf6fb 100%);box-shadow:inset 0 0 0 1px rgba(0,75,135,.08)}
+.logo img{height:62px;width:auto;display:block;mix-blend-mode:multiply}
 html.dark .logo img{background:#fff;padding:6px 10px;border-radius:8px}
 @media(max-width:720px){.logo img{height:50px}}
 nav.primary{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
@@ -73,7 +73,17 @@ html.dark nav.primary a.store{background:#4FAF3C;color:#0F1A0C}
 html.dark nav.primary a.store:hover{background:#5FC44A}
 
 /* ============ IMAGE SLOTS (placeholders showing photo placement) ============ */
-.imgslot{position:relative;background:var(--slot-bg);display:flex;align-items:center;justify-content:center;overflow:hidden;color:var(--text-muted)}
+.imgslot{position:relative;background:var(--slot-bg);display:flex;align-items:center;justify-content:center;overflow:hidden;color:#fff;background-size:cover;background-position:center}
+.imgslot::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,47,87,.08),rgba(0,38,65,.42));z-index:0}
+.imgslot .lbl{position:relative;z-index:1;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.hero .imgslot{background-image:url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85")}
+.card:nth-child(1) .imgslot{background-image:url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85")}
+.card:nth-child(2) .imgslot{background-image:url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=85")}
+.card:nth-child(3) .imgslot{background-image:url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85")}
+.store .imgslot{background-image:url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=85")}
+.newsitem:nth-child(1) .imgslot{background-image:url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85")}
+.newsitem:nth-child(2) .imgslot{background-image:url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85")}
+.newsitem:nth-child(3) .imgslot{background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85")}
 .imgslot .lbl{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:10px;opacity:.75}
 .imgslot .lbl::before{content:"📷";display:block;font-size:1.5rem;margin-bottom:4px}
 .slant-r{clip-path:polygon(0 0,100% 0,100% 100%,7% 100%)}
@@ -103,8 +113,9 @@ html.dark .golink .arr{color:#08240A}
 
 /* ============ AUDIENCE ROUTER (compact band) ============ */
 .router{background:var(--bg-panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:26px 0}
-.router .wrap{display:grid;grid-template-columns:auto repeat(4,1fr);gap:12px;align-items:center}
-@media(max-width:900px){.router .wrap{grid-template-columns:1fr 1fr}.router .rlabel{grid-column:1/-1}}
+.router .wrap{display:grid;grid-template-columns:auto repeat(5,1fr);gap:12px;align-items:center}
+@media(max-width:1120px){.router .wrap{grid-template-columns:repeat(3,1fr)}.router .rlabel{grid-column:1/-1}}
+@media(max-width:650px){.router .wrap{grid-template-columns:1fr 1fr}}
 .router .rlabel{font-family:'Montserrat',sans-serif;font-weight:700;font-size:1rem;color:var(--blue-deep);padding-right:8px}
 .router a{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:52px;padding:10px 16px;background:var(--bg-elevated);border:1.5px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);font-weight:700;font-size:.93rem;transition:border-color .18s,transform .15s}
 .router a:hover{border-color:var(--blue);transform:translateY(-2px)}
