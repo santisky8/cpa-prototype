@@ -3,7 +3,7 @@ const COMMON = {
 en:{
   skip:"Skip to main content", login:"Login", register:"Register", dark:"Dark", light:"Light",
   searchlabel:"Search the site", searchph:"Search",
-  nav1:"Become a CPA", nav2:"Learn & Grow", nav3:"Resources & Guidance", nav4:"About the Profession", nav5:"CPAstore", nav6:"Tax 360",
+  nav1:"Become a CPA", nav2:"Learn & Grow", nav3:"Resources & Guidance", nav5:"CPAstore", nav6:"Tax 360",
   h1:"Register for the 2026 In-Depth Tax Program",
   lede:"Join Canada's most reputed tax training program and learn from 200+ technical experts across the nation. Registration closes August 26.",
   cta1:"Register now", cta2:"View all programs", heroimg:"Photo: professional reviewing tablet",
@@ -39,7 +39,7 @@ en:{
 fr:{
   skip:"Passer au contenu principal", login:"Connexion", register:"S'inscrire", dark:"Sombre", light:"Clair",
   searchlabel:"Rechercher sur le site", searchph:"Rechercher",
-  nav1:"Devenir CPA", nav2:"Apprendre et évoluer", nav3:"Ressources et directives", nav4:"À propos de la profession", nav5:"Magasin CPA", nav6:"Tax 360",
+  nav1:"Devenir CPA", nav2:"Apprendre et évoluer", nav3:"Ressources et directives", nav5:"Magasin CPA", nav6:"Tax 360",
   h1:"Inscrivez-vous au Cours fondamental d'impôt 2026",
   lede:"Joignez-vous au programme de formation fiscale le plus réputé au Canada et apprenez auprès de plus de 200 experts techniques. Les inscriptions se terminent le 26 août.",
   cta1:"S'inscrire maintenant", cta2:"Voir tous les programmes", heroimg:"Photo : professionnelle consultant une tablette",

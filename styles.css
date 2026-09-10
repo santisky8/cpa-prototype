@@ -60,9 +60,9 @@ html.dark .usearch input,html.dark .usearch button{background:#EDEBE7;color:#264
 .navbar{background:var(--bg-elevated);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
 .navbar .wrap{display:flex;align-items:center;gap:8px;padding:10px 22px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;min-height:54px;margin-right:18px;padding:3px 0}
-.logo img{height:74px;width:auto;display:block}
+.logo img{height:92px;width:auto;display:block}
 html.dark .logo img{background:#fff;padding:6px 10px;border-radius:8px}
-@media(max-width:720px){.logo img{height:50px}}
+@media(max-width:720px){.logo img{height:64px}}
 nav.primary{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
 nav.primary a{display:inline-flex;align-items:center;min-height:46px;padding:8px 15px;border-radius:8px;color:var(--text);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:3px solid transparent;transition:background .18s,border-color .18s}
 nav.primary a:hover{background:var(--bg-panel);border-bottom-color:var(--blue)}
@@ -73,7 +73,7 @@ nav.primary a.store:hover{background:var(--bg-panel);border-bottom-color:var(--b
 /* ============ IMAGE SLOTS (placeholders showing photo placement) ============ */
 .imgslot{position:relative;background:var(--slot-bg);display:flex;align-items:center;justify-content:center;overflow:hidden;color:#fff;background-size:cover;background-position:center}
 .imgslot::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,47,87,.08),rgba(0,38,65,.42));z-index:0}
-.imgslot .lbl{position:relative;z-index:1;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+.imgslot .lbl{display:none}
 .hero .imgslot{background-image:url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85")}
 .card:nth-child(1) .imgslot{background-image:url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85")}
 .card:nth-child(2) .imgslot{background-image:url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=85")}
@@ -159,18 +159,23 @@ section{padding:44px 0}
 .card p{font-size:.9rem;color:var(--text-muted);flex:1;margin-bottom:12px}
 
 /* CPAstore strip */
-.store{background:linear-gradient(100deg,var(--blue-deep) 0%,var(--blue-bright) 100%);color:#fff}
-html.dark .store{background:linear-gradient(100deg,#23425E,#2C567C)}
+.store{background:var(--bg-panel);color:var(--text);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+html.dark .store{background:var(--bg-panel)}
 .store .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding-top:36px;padding-bottom:36px}
 @media(max-width:840px){.store .wrap{grid-template-columns:1fr}}
-.store h2{font-size:clamp(1.4rem,2.6vw,1.8rem);margin-bottom:10px;color:#fff}
-.store p{opacity:.92;margin-bottom:18px;max-width:56ch}
-.store .btn{border-color:#fff;background:#fff;color:var(--blue-deep)}
-html.dark .store .btn{color:#23425E}
-.store .btn:hover{background:#E7F1FA}
+.store h2{font-size:clamp(1.4rem,2.6vw,1.8rem);margin-bottom:10px;color:var(--blue-deep)}
+.store p{color:var(--text-muted);margin-bottom:18px;max-width:56ch}
+.store .btn{border-color:var(--green);background:var(--green);color:#fff}
+.store .btn:hover{background:var(--green-deep)}
 .store .badge{display:inline-block;background:#fff;color:#1E6414;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:99px;margin-bottom:12px}
 
-.store .imgslot{min-height:170px;border-radius:var(--radius);background:rgba(255,255,255,.14);color:rgba(255,255,255,.85)}
+.store .imgslot{min-height:170px;border-radius:var(--radius);background-color:#dfe8e4}
+.tax-feature{background:var(--bg);border-top:1px solid var(--border)}
+.tax-feature .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+@media(max-width:840px){.tax-feature .wrap{grid-template-columns:1fr}}
+.tax-feature h2{font-size:clamp(1.4rem,2.6vw,1.8rem);color:var(--blue-deep);margin:10px 0}
+.tax-feature p{color:var(--text-muted);max-width:54ch;margin-bottom:18px}
+.tax-feature .imgslot{min-height:190px;border-radius:var(--radius);background-image:url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1000&q=85")}
 
 /* news: small image + text, balanced */
 .news{background:var(--bg-panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -253,6 +258,13 @@ html.dark .chat-input button{color:#08240A}
 .count{font-size:.88rem;color:var(--text-muted);margin-bottom:14px}
 .coursegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media(max-width:900px){.coursegrid{grid-template-columns:1fr}}
+.coursegrid .card::before{content:"";display:block;height:116px;background-size:cover;background-position:center}
+.coursegrid .card:nth-child(1)::before{background-image:url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=85")}
+.coursegrid .card:nth-child(2)::before{background-image:url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85")}
+.coursegrid .card:nth-child(3)::before{background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85")}
+.coursegrid .card:nth-child(4)::before{background-image:url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85")}
+.coursegrid .card:nth-child(5)::before{background-image:url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85")}
+.coursegrid .card:nth-child(6)::before{background-image:url("https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=85")}
 .ctag{display:inline-block;background:var(--bg-panel);color:var(--blue-deep);font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-bottom:10px;align-self:flex-start}
 .cmeta{display:flex;gap:12px;flex-wrap:wrap;font-size:.83rem;color:var(--text-muted);margin-bottom:12px}
 .cprice{font-weight:800;color:var(--blue-deep)}
