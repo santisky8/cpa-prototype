@@ -3,11 +3,11 @@ const COMMON = {
 en:{
   skip:"Skip to main content", login:"Login", register:"Register", dark:"Dark", light:"Light",
   searchlabel:"Search the site", searchph:"Search",
-  nav1:"Become a CPA", nav2:"Learn & Grow", nav3:"Resources & Guidance", nav5:"CPAstore", nav6:"Tax 360",
+  nav1:"Become a CPA", nav2:"Learn & Grow", nav3:"Resources & Guidance", nav5:"CPA Store", nav6:"Tax 360",
   h1:"Register for the 2026 In-Depth Tax Program",
   lede:"Join Canada's most reputed tax training program and learn from 200+ technical experts across the nation. Registration closes August 26.",
   cta1:"Register now", cta2:"View all programs", heroimg:"Photo: professional reviewing tablet",
-  rlabel:"I'm here as a…", r1:"Student", r2:"Affiliate Member", r3:"Provincial CPA Affiliate", r4:"Retired CPA", r5:"National Member", r6:"Advantage Member", r7:"Public",
+  rlabel:"I'm here as a…", r1:"Advantage Member", r2:"National Member", r3:"Provincial CPA Affiliate / Retired CPA", r4:"Student", r5:"Public",
   focush:"Our focus areas", learn:"Learn more",
   f1h:"Data and technology", f1p:"Stay relevant as technology reshapes the profession, from AI to information integrity.",
   f2h:"Ethics and governance", f2p:"Champion transparency, accountability and ethical decision-making in business.",
@@ -19,22 +19,22 @@ en:{
   c1img:"Photo: handbook library", c1h:"CPA Canada Handbook", c1p:"Complimentary access for Canadian CPAs. The essential collection for reporting and assurance standards.",
   c2img:"Photo: conference session", c2h:"2026 In-Depth Tax Program", c2p:"Sign up for Canada's most reputed tax training program with 200+ technical experts.",
   c3img:"Photo: online learning", c3h:"Complimentary CPD", c3p:"World-class free professional development, on demand. Filter by topic, format and CPD hours.",
-  storebadge:"Now part of one site", storeh:"CPAstore: handbooks, courses and tools in one place",
+  storebadge:"Now part of one site", storeh:"CPA Store: handbooks, courses and tools in one place",
   storep:"No more separate website. Browse the full catalogue, manage your invoices, and check out without leaving cpacanada.ca.",
-  storecta:"Shop the CPAstore", storeimg:"Photo: publications & products",
+  storecta:"Shop the CPA Store", storeimg:"Photo: publications & products",
   newsh:"In the news", newsall:"Read more",
   n1img:"Photo: market screens", n1d:"July 10, 2026", n1h:"Gambling or investing? Prediction markets blur the line", n1p:"Canadians will soon have to decide whether they're making an investment or placing a bet.",
   n2img:"Photo: investigator at work", n2d:"July 2, 2026", n2h:"This CPA seeks the truth behind the numbers", n2p:"From public practice to the RCMP, CPA Guy Paul Larocque works the numbers to track down the truth.",
   n3img:"Photo: AI illustration", n3d:"June 24, 2026", n3h:"AI agents are the new co-auditors, says our expert", n3p:"AI agents are becoming active participants in the auditing process.",
   fabout:"Supporting, empowering and advocating for more than 200,000 Chartered Professional Accountants.",
   fnav:"Explore", fsup:"Support", help:"Help Centre", fcontact:"Contact us", faccess:"Accessibility",
-  fleg:"Legal", fpriv:"Privacy", fterms:"Terms of use",
+  fleg:"Legal", fpriv:"Privacy", fterms:"Terms of use", fsocial:"Follow us",
   fine:"Internal concept prototype. Not affiliated with or endorsed by CPA Canada. Placeholder content for demonstration.",
   chatlaunch:"Ask CPA Assist", chath:"CPA Assist", chatsub:"Programs, courses, standards. Ask me anything",
   chatph:"Type your question…", chatnote:"Demo assistant with scripted responses. Production version: AI with live site retrieval.",
   chatHello:"Hi! I'm CPA Assist. I can point you to programs, courses, standards and guidance on this site. What are you looking for?",
-  chatFallback:"I want to point you to the right place. Try asking about becoming a CPA, courses and CPD, the handbooks, the CPAstore, or how to contact support. You can also use the search bar above.",
-  chips:["How do I become a CPA?","Find CPD courses","Where is the CPAstore?","Contact support"]
+  chatFallback:"I want to point you to the right place. Try asking about becoming a CPA, courses and CPD, the handbooks, the CPA Store, or how to contact support. You can also use the search bar above.",
+  chips:["How do I become a CPA?","Find CPD courses","Where is the CPA Store?","Contact support"]
 },
 fr:{
   skip:"Passer au contenu principal", login:"Connexion", register:"S'inscrire", dark:"Sombre", light:"Clair",
@@ -43,7 +43,7 @@ fr:{
   h1:"Inscrivez-vous au Cours fondamental d'impôt 2026",
   lede:"Joignez-vous au programme de formation fiscale le plus réputé au Canada et apprenez auprès de plus de 200 experts techniques. Les inscriptions se terminent le 26 août.",
   cta1:"S'inscrire maintenant", cta2:"Voir tous les programmes", heroimg:"Photo : professionnelle consultant une tablette",
-  rlabel:"Je suis ici en tant que…", r1:"Étudiant", r2:"Membre affilié", r3:"CPA provincial affilié", r4:"CPA à la retraite", r5:"Membre national", r6:"Membre Avantage", r7:"Grand public",
+  rlabel:"Je suis ici en tant que…", r1:"Membre Avantage", r2:"Membre national", r3:"CPA provincial affilié / CPA à la retraite", r4:"Étudiant", r5:"Grand public",
   focush:"Nos domaines d'intervention", learn:"En savoir plus",
   f1h:"Données et technologie", f1p:"Restez pertinent alors que la technologie transforme la profession, de l'IA à l'intégrité de l'information.",
   f2h:"Éthique et gouvernance", f2p:"Promouvoir la transparence, la responsabilité et la prise de décision éthique en affaires.",
@@ -64,7 +64,7 @@ fr:{
   n3img:"Photo : illustration IA", n3d:"24 juin 2026", n3h:"Les agents d'IA, nouveaux coauditeurs, selon notre expert", n3p:"Les agents d'IA deviennent des participants actifs au processus d'audit.",
   fabout:"Soutenir, outiller et représenter plus de 200 000 comptables professionnels agréés.",
   fnav:"Explorer", fsup:"Soutien", help:"Centre d'aide", fcontact:"Nous joindre", faccess:"Accessibilité",
-  fleg:"Mentions légales", fpriv:"Confidentialité", fterms:"Conditions d'utilisation",
+  fleg:"Mentions légales", fpriv:"Confidentialité", fterms:"Conditions d'utilisation", fsocial:"Suivez-nous",
   fine:"Prototype conceptuel interne. Sans affiliation avec CPA Canada. Contenu fictif à des fins de démonstration.",
   chatlaunch:"Demander à CPA Assist", chath:"CPA Assist", chatsub:"Programmes, cours, normes. Posez vos questions",
   chatph:"Écrivez votre question…", chatnote:"Assistant de démonstration à réponses scriptées. En production : IA avec recherche en direct.",
@@ -82,7 +82,7 @@ en:[
   {k:["handbook","standard","reporting","assurance","audit","ifrs"],
    a:"The CPA Canada Handbook covers financial reporting and assurance standards, with complimentary access for Canadian CPAs. Find it under Resources & Guidance → Standards."},
   {k:["store","shop","buy","purchase","publication"],
-   a:"The CPAstore is now integrated into this site: same account, same cart. Browse handbooks, courses, and tools from the CPAstore link in the main menu."},
+  a:"The CPA Store is a dedicated destination for handbooks, courses, and tools. Use the CPA Store link in the main menu when you are ready to purchase."},
   {k:["contact","support","help","phone","email","password","invoice"],
    a:"The Help Centre covers profile, password, and invoice questions. For membership matters, contact your provincial body; the national membership line is 1-855-441-4888."},
   {k:["fee","cost","price","dues","pay","membership"],
@@ -145,6 +145,10 @@ function applyLang(){
     const k = el.getAttribute("data-i18n-ph");
     if(D[k] !== undefined) el.placeholder = D[k];
   });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
+    const k = el.getAttribute("data-i18n-aria");
+    if(D[k] !== undefined) el.setAttribute("aria-label", D[k]);
+  });
   const img = document.getElementById("logoImg");
   img.src = LOGO[lang]; img.alt = LOGO_ALT[lang];
   const lt = document.getElementById("langToggle");
@@ -156,6 +160,21 @@ function applyLang(){
 }
 document.getElementById("themeToggle").addEventListener("click", function(){ dark = !dark; sset("cpa-dark", String(dark)); applyTheme(); });
 document.getElementById("langToggle").addEventListener("click", function(){ lang = lang==="en"?"fr":"en"; sset("cpa-lang", lang); applyLang(); });
+
+const navToggle = document.getElementById("navToggle");
+const primaryNav = document.getElementById("primaryNav");
+if(navToggle && primaryNav){
+  function closeNav(){ primaryNav.classList.remove("open"); navToggle.setAttribute("aria-expanded","false"); }
+  function toggleNav(){ const open = primaryNav.classList.toggle("open"); navToggle.setAttribute("aria-expanded", String(open)); }
+  navToggle.addEventListener("click", toggleNav);
+  primaryNav.addEventListener("click", function(e){ if(e.target.tagName === "A") closeNav(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeNav(); });
+  document.addEventListener("click", function(e){
+    if(!primaryNav.classList.contains("open")) return;
+    if(!primaryNav.contains(e.target) && !navToggle.contains(e.target)) closeNav();
+  });
+  window.addEventListener("resize", function(){ if(window.innerWidth > 900) closeNav(); });
+}
 
 const panel = document.getElementById("chatPanel");
 const launch = document.getElementById("chatLaunch");

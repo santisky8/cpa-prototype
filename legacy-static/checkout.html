@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0068B4">
+<link rel="icon" href="assets/favicon-leaf.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-leaf.png">
+<title>Checkout | CPA Canada Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
+<div class="utilbar">
+  <div class="wrap">
+    <a class="ubtn" href="#" data-i18n="login">Login</a>
+    <a class="ubtn" href="#" data-i18n="register">Register</a>
+    <button class="ubtn text" id="langToggle" aria-label="Passer au français">FR</button>
+    <button class="ubtn text" id="themeToggle" aria-pressed="false"><span aria-hidden="true">◐</span>&nbsp;<span data-i18n="dark">Dark</span></button>
+    <form class="usearch" role="search" onsubmit="return false">
+      <label class="skip-link" for="q" data-i18n="searchlabel">Search the site</label>
+      <input id="q" type="search" data-i18n-ph="searchph" placeholder="Search">
+      <button type="submit" aria-label="Search"></button>
+    </form>
+  </div>
+</div>
+
+<div class="navbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img id="logoImg" src="assets/logo-en.png" alt="CPA Chartered Professional Accountants Canada (concept redesign)"></a>
+    <button class="navToggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="primary" id="primaryNav" aria-label="Primary">
+      <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a>
+      <a href="learn.html" data-i18n="nav2">Learn &amp; Grow</a>
+      <a href="resources.html" data-i18n="nav3">Resources &amp; Guidance</a>
+      <a href="tax-360.html" data-i18n="nav6">Tax 360</a>
+      <a href="cpastore.html" class="store" data-i18n="nav5">CPA Store</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+<div class="pagehero store-hero"><div class="wrap"><div>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html" data-i18n="home">Home</a> / <a href="cpastore.html" data-i18n="nav5">CPA Store</a> / <span data-i18n="coTitle">Checkout</span></nav>
+  <h1 data-i18n="coTitle">Checkout</h1>
+  <p data-i18n="coLede">Review your order and complete payment. This is a concept demo — no real payment is processed.</p>
+</div></div></div>
+
+<section><div class="wrap">
+  <div id="checkoutView">
+    <form id="checkoutForm" class="checkout-grid" novalidate>
+      <div>
+        <div class="checkout-card">
+          <h2 data-i18n="coShipH">Shipping address</h2>
+          <div class="field">
+            <label for="shipSelect" data-i18n="coSavedAddr">Saved addresses</label>
+            <select id="shipSelect"></select>
+          </div>
+          <div class="fgrid">
+            <div class="field full"><label for="shipName" data-i18n="coFullName">Full name</label><input id="shipName" name="shipName" type="text" required autocomplete="name"></div>
+            <div class="field full"><label for="shipAddr1" data-i18n="coAddr1">Address line 1</label><input id="shipAddr1" name="shipAddr1" type="text" required autocomplete="address-line1"></div>
+            <div class="field full"><label for="shipAddr2" data-i18n="coAddr2">Address line 2 (optional)</label><input id="shipAddr2" name="shipAddr2" type="text" autocomplete="address-line2"></div>
+            <div class="field"><label for="shipCity" data-i18n="coCity">City</label><input id="shipCity" name="shipCity" type="text" required autocomplete="address-level2"></div>
+            <div class="field"><label for="shipProv" data-i18n="coProv">Province</label><input id="shipProv" name="shipProv" type="text" required autocomplete="address-level1"></div>
+            <div class="field"><label for="shipPostal" data-i18n="coPostal">Postal code</label><input id="shipPostal" name="shipPostal" type="text" required autocomplete="postal-code"></div>
+            <div class="field"><label for="shipCountry" data-i18n="coCountry">Country</label><input id="shipCountry" name="shipCountry" type="text" required autocomplete="country-name" value="Canada"></div>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h2 data-i18n="coBillH">Billing address</h2>
+          <label class="checkrow"><input type="checkbox" id="billSame" checked><span data-i18n="coBillSame">Same as shipping address</span></label>
+          <div id="billFields" hidden>
+            <div class="field">
+              <label for="billSelect" data-i18n="coSavedAddr">Saved addresses</label>
+              <select id="billSelect"></select>
+            </div>
+            <div class="fgrid">
+              <div class="field full"><label for="billName" data-i18n="coFullName">Full name</label><input id="billName" name="billName" type="text" autocomplete="name"></div>
+              <div class="field full"><label for="billAddr1" data-i18n="coAddr1">Address line 1</label><input id="billAddr1" name="billAddr1" type="text" autocomplete="address-line1"></div>
+              <div class="field full"><label for="billAddr2" data-i18n="coAddr2">Address line 2 (optional)</label><input id="billAddr2" name="billAddr2" type="text" autocomplete="address-line2"></div>
+              <div class="field"><label for="billCity" data-i18n="coCity">City</label><input id="billCity" name="billCity" type="text" autocomplete="address-level2"></div>
+              <div class="field"><label for="billProv" data-i18n="coProv">Province</label><input id="billProv" name="billProv" type="text" autocomplete="address-level1"></div>
+              <div class="field"><label for="billPostal" data-i18n="coPostal">Postal code</label><input id="billPostal" name="billPostal" type="text" autocomplete="postal-code"></div>
+              <div class="field"><label for="billCountry" data-i18n="coCountry">Country</label><input id="billCountry" name="billCountry" type="text" autocomplete="country-name" value="Canada"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h2 data-i18n="coPayH">Payment details</h2>
+          <div class="field full"><label for="cardName" data-i18n="coCardName">Name on card</label><input id="cardName" name="cardName" type="text" required autocomplete="cc-name"></div>
+          <div class="field full"><label for="cardNumber" data-i18n="coCardNumber">Card number</label><input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" required autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="19"></div>
+          <div class="fgrid">
+            <div class="field"><label for="cardExpiry" data-i18n="coExpiry">Expiry (MM/YY)</label><input id="cardExpiry" name="cardExpiry" type="text" required autocomplete="cc-exp" placeholder="MM/YY" maxlength="5"></div>
+            <div class="field"><label for="cardCvc" data-i18n="coCvc">CVC</label><input id="cardCvc" name="cardCvc" type="text" inputmode="numeric" required autocomplete="cc-csc" placeholder="123" maxlength="4"></div>
+          </div>
+          <p class="chat-demo-note" style="text-align:left;padding:0;margin-top:6px" data-i18n="coDemoNote">Demo only — no real payment is processed and no card data is stored or transmitted.</p>
+        </div>
+      </div>
+
+      <aside class="checkout-card" style="position:sticky;top:96px">
+        <h2 data-i18n="coSummaryH">Order summary</h2>
+        <div class="summary-line"><span id="summaryItemName">CPA Canada Handbook</span><span id="summaryItemPrice">$189.00</span></div>
+        <div class="summary-line"><span data-i18n="coSubtotal">Subtotal</span><span id="summarySubtotal">$189.00</span></div>
+        <div class="summary-line"><span data-i18n="coTax">HST (13%)</span><span id="summaryTax">$24.57</span></div>
+        <div class="summary-line total"><span data-i18n="coTotal">Total</span><span id="summaryTotal">$213.57</span></div>
+        <button type="submit" class="btn primary" style="width:100%;justify-content:center;margin-top:16px" data-i18n="coPlaceOrder">Place order</button>
+        <p class="secure-note"><span aria-hidden="true">🔒</span><span data-i18n="coSecureNote">Concept demo checkout — no real transaction occurs.</span></p>
+      </aside>
+    </form>
+  </div>
+
+  <div id="confirmView" class="wizard" hidden>
+    <div class="wresult">
+      <h3 data-i18n="coConfirmH">Order confirmed</h3>
+      <p data-i18n="coConfirmP">Thanks for your order. In the full product this is where a confirmation email and receipt would be sent.</p>
+      <p><strong data-i18n="coOrderNum">Order number:</strong> <span id="confirmOrderNum"></span></p>
+      <p class="wback"><a class="btn primary" href="cpastore.html" data-i18n="coBackToStore">Back to CPA Store</a></p>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>CPA Canada <span style="font-size:.65rem;letter-spacing:.1em;opacity:.8">CONCEPT</span></h4>
+        <p style="font-size:.88rem;max-width:34ch" data-i18n="fabout">Supporting, empowering and advocating for more than 200,000 Chartered Professional Accountants.</p><div class="social"><span class="social-h" data-i18n="fsocial">Follow us</span><div class="social-links"><a href="https://www.linkedin.com/company/cpa-canada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a><a href="https://x.com/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.929.258-1.563 1.587-1.563h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></svg></a><a href="https://www.instagram.com/cpacanada" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a><a href="https://www.youtube.com/user/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div></div>
+
+      </div>
+      <div>
+        <h4 data-i18n="fnav">Explore</h4>
+        <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a><br>
+        <a href="learn.html" data-i18n="nav2">Learn &amp; Grow</a><br>
+        <a href="cpastore.html" data-i18n="nav5">CPA Store</a>
+      </div>
+      <div>
+        <h4 data-i18n="fsup">Support</h4>
+        <a href="#" data-i18n="help">Help Centre</a><br>
+        <a href="#" data-i18n="fcontact">Contact us</a><br>
+        <a href="#" data-i18n="faccess">Accessibility</a>
+      </div>
+      <div>
+        <h4 data-i18n="fleg">Legal</h4>
+        <a href="#" data-i18n="fpriv">Privacy</a><br>
+        <a href="#" data-i18n="fterms">Terms of use</a>
+      </div>
+    </div>
+    <p class="fine" data-i18n="fine">Internal concept prototype. Not affiliated with or endorsed by CPA Canada. Placeholder content for demonstration.</p>
+  </div>
+</footer>
+<button class="chat-launch" id="chatLaunch" aria-expanded="false" aria-controls="chatPanel">
+  <svg class="chat-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5C4 7.81 8.03 4 13 4s9 3.81 9 8.5-4.03 8.5-9 8.5c-.98 0-1.92-.15-2.8-.42-.96.66-2.42 1.44-4.2 1.92a.6.6 0 0 1-.7-.85c.63-1.16.9-2.2 1-2.9C4.94 17.55 4 15.15 4 12.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9.5" cy="12.5" r="1.1" fill="currentColor"/><circle cx="13" cy="12.5" r="1.1" fill="currentColor"/><circle cx="16.5" cy="12.5" r="1.1" fill="currentColor"/></svg>
+ <span data-i18n="chatlaunch">Ask CPA Assist</span>
+</button>
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="CPA Assist chatbot">
+  <div class="chat-head"><h3 data-i18n="chath">CPA Assist</h3><p data-i18n="chatsub">Programs, courses, standards. Ask me anything</p></div>
+  <div class="chat-log" id="chatLog" aria-live="polite"></div>
+  <div class="chips" id="chatChips"></div>
+  <div class="chat-input">
+    <input id="chatText" type="text" data-i18n-ph="chatph" placeholder="Type your question…" aria-label="Your question">
+    <button id="chatSend" aria-label="Send">→</button>
+  </div>
+  <p class="chat-demo-note" data-i18n="chatnote">Demo assistant with scripted responses. Production version: AI with live site retrieval.</p>
+</div>
+
+<script>
+window.PAGE_I18N = {
+en:{ home:"Home",
+  coTitle:"Checkout", coLede:"Review your order and complete payment. This is a concept demo — no real payment is processed.",
+  coShipH:"Shipping address", coBillH:"Billing address", coPayH:"Payment details", coSummaryH:"Order summary",
+  coSavedAddr:"Saved addresses", coAddNew:"+ Add a new address",
+  coAddrHome:"Home — 123 Bay Street, Suite 400, Toronto, ON", coAddrOffice:"Office — 44 King Street West, Toronto, ON",
+  coFullName:"Full name", coAddr1:"Address line 1", coAddr2:"Address line 2 (optional)", coCity:"City", coProv:"Province", coPostal:"Postal code", coCountry:"Country",
+  coBillSame:"Same as shipping address",
+  coCardName:"Name on card", coCardNumber:"Card number", coExpiry:"Expiry (MM/YY)", coCvc:"CVC",
+  coDemoNote:"Demo only — no real payment is processed and no card data is stored or transmitted.",
+  coSubtotal:"Subtotal", coTax:"HST (13%)", coTotal:"Total", coPlaceOrder:"Place order",
+  coSecureNote:"Concept demo checkout — no real transaction occurs.",
+  coConfirmH:"Order confirmed", coConfirmP:"Thanks for your order. In the full product this is where a confirmation email and receipt would be sent.",
+  coOrderNum:"Order number:", coBackToStore:"Back to CPA Store",
+  itemHandbook:"CPA Canada Handbook", itemCourse:"Professional courses", itemTools:"Practical tools"
+},
+fr:{ home:"Accueil",
+  coTitle:"Paiement", coLede:"Passez en revue votre commande et complétez le paiement. Ceci est une démonstration conceptuelle — aucun paiement réel n'est traité.",
+  coShipH:"Adresse de livraison", coBillH:"Adresse de facturation", coPayH:"Détails du paiement", coSummaryH:"Résumé de la commande",
+  coSavedAddr:"Adresses enregistrées", coAddNew:"+ Ajouter une nouvelle adresse",
+  coAddrHome:"Domicile — 123, rue Bay, bureau 400, Toronto, ON", coAddrOffice:"Bureau — 44, rue King Ouest, Toronto, ON",
+  coFullName:"Nom complet", coAddr1:"Adresse (ligne 1)", coAddr2:"Adresse (ligne 2, facultatif)", coCity:"Ville", coProv:"Province", coPostal:"Code postal", coCountry:"Pays",
+  coBillSame:"Identique à l'adresse de livraison",
+  coCardName:"Nom sur la carte", coCardNumber:"Numéro de carte", coExpiry:"Expiration (MM/AA)", coCvc:"CVC",
+  coDemoNote:"Démonstration seulement — aucun paiement réel n'est traité et aucune donnée de carte n'est stockée ou transmise.",
+  coSubtotal:"Sous-total", coTax:"TVH (13 %)", coTotal:"Total", coPlaceOrder:"Passer la commande",
+  coSecureNote:"Paiement de démonstration conceptuelle — aucune transaction réelle n'a lieu.",
+  coConfirmH:"Commande confirmée", coConfirmP:"Merci pour votre commande. Dans le produit complet, un courriel de confirmation et un reçu seraient envoyés ici.",
+  coOrderNum:"Numéro de commande :", coBackToStore:"Retour au Magasin CPA",
+  itemHandbook:"Manuel de CPA Canada", itemCourse:"Cours professionnels", itemTools:"Outils pratiques"
+}
+};
+</script>
+<script src="shared.js"></script>
+<script>
+(function(){
+  var ITEMS = {
+    handbook: { key:"itemHandbook", price:189.00 },
+    course: { key:"itemCourse", price:449.00 },
+    tools: { key:"itemTools", price:59.00 }
+  };
+  var params = new URLSearchParams(window.location.search);
+  var itemId = params.get("item");
+  var item = ITEMS[itemId] || ITEMS.handbook;
+
+  var SAVED_ADDRESSES = [
+    { id:"home", nameKey:"coAddrHome", name:"Alex Tremblay", addr1:"123 Bay Street, Suite 400", addr2:"", city:"Toronto", prov:"ON", postal:"M5J 2T3", country:"Canada" },
+    { id:"office", nameKey:"coAddrOffice", name:"Alex Tremblay", addr1:"44 King Street West", addr2:"", city:"Toronto", prov:"ON", postal:"M5H 1J1", country:"Canada" }
+  ];
+
+  function fmt(n){ return "$" + n.toFixed(2); }
+
+  function renderSummary(){
+    var D = window.T ? null : null;
+    var name = (window.T && window.T(item.key)) || item.key;
+    document.getElementById("summaryItemName").textContent = name;
+    document.getElementById("summaryItemPrice").textContent = fmt(item.price);
+    document.getElementById("summarySubtotal").textContent = fmt(item.price);
+    var tax = item.price * 0.13;
+    document.getElementById("summaryTax").textContent = fmt(tax);
+    document.getElementById("summaryTotal").textContent = fmt(item.price + tax);
+  }
+  document.addEventListener("langchange", renderSummary);
+  renderSummary();
+
+  function populateAddressSelect(sel){
+    sel.innerHTML = "";
+    SAVED_ADDRESSES.forEach(function(a){
+      var opt = document.createElement("option");
+      opt.value = a.id;
+      opt.textContent = (window.T && window.T(a.nameKey)) || a.nameKey;
+      sel.appendChild(opt);
+    });
+    var newOpt = document.createElement("option");
+    newOpt.value = "new";
+    newOpt.textContent = (window.T && window.T("coAddNew")) || "+ Add a new address";
+    sel.appendChild(newOpt);
+  }
+
+  function fillAddressFields(prefix, addressId){
+    var a = SAVED_ADDRESSES.find(function(x){ return x.id === addressId; });
+    var fields = ["Name","Addr1","Addr2","City","Prov","Postal","Country"];
+    var keys = ["name","addr1","addr2","city","prov","postal","country"];
+    fields.forEach(function(f, i){
+      var el = document.getElementById(prefix + f);
+      if(!el) return;
+      el.value = a ? a[keys[i]] : (f === "Country" ? "Canada" : "");
+    });
+  }
+
+  var shipSelect = document.getElementById("shipSelect");
+  var billSelect = document.getElementById("billSelect");
+  populateAddressSelect(shipSelect);
+  populateAddressSelect(billSelect);
+  shipSelect.value = "home";
+  fillAddressFields("ship", "home");
+  shipSelect.addEventListener("change", function(){ fillAddressFields("ship", shipSelect.value === "new" ? null : shipSelect.value); });
+  billSelect.addEventListener("change", function(){ fillAddressFields("bill", billSelect.value === "new" ? null : billSelect.value); });
+  document.addEventListener("langchange", function(){
+    var curShip = shipSelect.value, curBill = billSelect.value;
+    populateAddressSelect(shipSelect); populateAddressSelect(billSelect);
+    shipSelect.value = curShip; billSelect.value = curBill;
+  });
+
+  var billSame = document.getElementById("billSame");
+  var billFields = document.getElementById("billFields");
+  billSame.addEventListener("change", function(){
+    billFields.hidden = billSame.checked;
+    if(!billSame.checked && !billSelect.value){ billSelect.value = "home"; fillAddressFields("bill", "home"); }
+  });
+
+  document.getElementById("checkoutForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    if(!e.target.checkValidity()){ e.target.reportValidity(); return; }
+    document.getElementById("checkoutView").hidden = true;
+    var confirmView = document.getElementById("confirmView");
+    confirmView.hidden = false;
+    document.getElementById("confirmOrderNum").textContent = "CPA-" + Math.floor(100000 + Math.random()*900000);
+    confirmView.scrollIntoView({behavior:"smooth", block:"start"});
+  });
+})();
+</script>
+</body>
+</html>

@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0068B4">
+<link rel="icon" href="assets/favicon-leaf.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-leaf.png">
 <title>Financial Reporting | CPA Canada Concept</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,20 +24,22 @@
     <form class="usearch" role="search" onsubmit="return false">
       <label class="skip-link" for="q" data-i18n="searchlabel">Search the site</label>
       <input id="q" type="search" data-i18n-ph="searchph" placeholder="Search">
-      <button type="submit" aria-label="Search">🔍</button>
+      <button type="submit" aria-label="Search"></button>
     </form>
   </div>
 </div>
 
 <div class="navbar">
   <div class="wrap">
-    <a class="logo" href="index.html"><img id="logoImg" src="assets/logo-en.png" alt="CPA Chartered Professional Accountants Canada (concept redesign)"><nav class="primary" aria-label="Primary">
+    <a class="logo" href="index.html"><img id="logoImg" src="assets/logo-en.png" alt="CPA Chartered Professional Accountants Canada (concept redesign)"></a>
+    <button class="navToggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="primary" id="primaryNav" aria-label="Primary">
       <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a>
       <a href="learn.html" data-i18n="nav2">Learn &amp; Grow</a>
       <a href="resources.html" aria-current="page" data-i18n="nav3">Resources &amp; Guidance</a>
       <a href="tax-360.html" data-i18n="nav6">Tax 360</a>
-      <a href="cpastore.html" class="store" data-i18n="nav5">CPAstore</a>
-    </nav>   </nav>
+      <a href="cpastore.html" class="store" data-i18n="nav5">CPA Store</a>
+    </nav>
   </div>
 </div>
 
@@ -69,13 +75,14 @@
     <div class="cols">
       <div>
         <h4>CPA Canada <span style="font-size:.65rem;letter-spacing:.1em;opacity:.8">CONCEPT</span></h4>
-        <p style="font-size:.88rem;max-width:34ch" data-i18n="fabout">Supporting, empowering and advocating for more than 200,000 Chartered Professional Accountants.</p>
+        <p style="font-size:.88rem;max-width:34ch" data-i18n="fabout">Supporting, empowering and advocating for more than 200,000 Chartered Professional Accountants.</p><div class="social"><span class="social-h" data-i18n="fsocial">Follow us</span><div class="social-links"><a href="https://www.linkedin.com/company/cpa-canada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></a><a href="https://x.com/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.929.258-1.563 1.587-1.563h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></svg></a><a href="https://www.instagram.com/cpacanada" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a><a href="https://www.youtube.com/user/CPACanada" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div></div>
+
       </div>
       <div>
         <h4 data-i18n="fnav">Explore</h4>
         <a href="become-a-cpa.html" data-i18n="nav1">Become a CPA</a><br>
         <a href="learn.html" data-i18n="nav2">Learn &amp; Grow</a><br>
-        <a href="cpastore.html" data-i18n="nav5">CPAstore</a>
+        <a href="cpastore.html" data-i18n="nav5">CPA Store</a>
       </div>
       <div>
         <h4 data-i18n="fsup">Support</h4>
@@ -93,7 +100,8 @@
   </div>
 </footer>
 <button class="chat-launch" id="chatLaunch" aria-expanded="false" aria-controls="chatPanel">
-  <span aria-hidden="true">💬</span> <span data-i18n="chatlaunch">Ask CPA Assist</span>
+  <svg class="chat-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5C4 7.81 8.03 4 13 4s9 3.81 9 8.5-4.03 8.5-9 8.5c-.98 0-1.92-.15-2.8-.42-.96.66-2.42 1.44-4.2 1.92a.6.6 0 0 1-.7-.85c.63-1.16.9-2.2 1-2.9C4.94 17.55 4 15.15 4 12.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="9.5" cy="12.5" r="1.1" fill="currentColor"/><circle cx="13" cy="12.5" r="1.1" fill="currentColor"/><circle cx="16.5" cy="12.5" r="1.1" fill="currentColor"/></svg>
+ <span data-i18n="chatlaunch">Ask CPA Assist</span>
 </button>
 <div class="chat-panel" id="chatPanel" role="dialog" aria-label="CPA Assist chatbot">
   <div class="chat-head"><h3 data-i18n="chath">CPA Assist</h3><p data-i18n="chatsub">Programs, courses, standards. Ask me anything</p></div>
