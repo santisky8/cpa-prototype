@@ -49,7 +49,7 @@ export default function LearnAndGrow() {
         <HeroCarousel className="pagehero-media" images={learnHeroImages} />
       </div>
       <section><div className="wrap">
-        <div className="storebanner">
+        <div className="notice">
           <span aria-hidden="true">▦</span>
           <span>{t("lbanner")}</span>
         </div>

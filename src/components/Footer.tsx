@@ -21,6 +21,7 @@ export default function Footer() {
           </div>
           <div>
             <h4>{t("fnav")}</h4>
+            <Link to="/about">{t("navAbout")}</Link><br />
             <Link to="/become-a-cpa">{t("nav1")}</Link><br />
             <Link to="/learn">{t("nav2")}</Link><br />
             <Link to="/cpastore">{t("nav5")}</Link>

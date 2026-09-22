@@ -63,10 +63,13 @@ export default function Navbar() {
           }}
         >
           <NavLink to="/become-a-cpa">{t("nav1")}</NavLink>
+          <NavLink to="/membership">{t("navM")}</NavLink>
           <NavLink to="/learn">{t("nav2")}</NavLink>
           <NavLink to="/resources">{t("nav3")}</NavLink>
           <NavLink to="/tax-360">{t("nav6")}</NavLink>
           <NavLink to="/cpastore" className="store">{t("nav5")}</NavLink>
+          <NavLink to="/knotia">Knotia</NavLink>
+          <NavLink to="/about">{t("navAbout")}</NavLink>
         </nav>
       </div>
     </div>

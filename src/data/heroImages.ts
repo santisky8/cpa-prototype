@@ -39,4 +39,4 @@ export const taxHeroImages: CarouselImage[] = [
   { src: unsplash("1590283603385-17ffb3a7f29f", 1000), alt: "Financial market data on a dark dashboard" }
 ];
 
-export const blueMountainImage = unsplash("1483728642387-6c3bdd6c93e5", 900, 88);
+export const blueMountainImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Blue_Mountain_Ontario_at_night_%28landscape%29.jpg/1280px-Blue_Mountain_Ontario_at_night_%28landscape%29.jpg";

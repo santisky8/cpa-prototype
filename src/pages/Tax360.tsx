@@ -26,7 +26,7 @@ export default function Tax360() {
       </div>
       <section>
         <div className="wrap">
-          <div className="storebanner">
+          <div className="notice">
             <span aria-hidden="true">◉</span>
             <span>{t("taxBanner")}</span>
           </div>

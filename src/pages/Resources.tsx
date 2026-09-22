@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "../i18n/I18nContext";
 import HeroCarousel from "../components/HeroCarousel";
+import ComplimentaryCPD from "../components/ComplimentaryCPD";
 import { reportingHeroImages } from "../data/heroImages";
 
 const tiles = ["rc1", "rc2", "rc3", "rc4", "rc5", "rc6"];
@@ -23,6 +24,14 @@ export default function Resources() {
       </div>
       <section>
         <div className="wrap">
+          <div className="sec-head"><h2>{t("cpdH")}</h2></div>
+          <p className="membership-intro">{t("cpdIntro")}</p>
+          <ComplimentaryCPD />
+        </div>
+      </section>
+      <section style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head"><h2>{t("standardsH")}</h2></div>
           <div className="focus">
             {tiles.map((k) => (
               <div className="tile" key={k}>

@@ -54,11 +54,9 @@ export default function BecomeACPA() {
       </section>
       <section style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <div className="notice-card">
-            <span className="badge">{t("portalBadge")}</span>
-            <h2>{t("portalH")}</h2>
-            <p>{t("portalP")}</p>
-            <a className="btn primary" href="#">{t("portalCta")}</a>
+          <div className="notice">
+            <span>{t("portalTeaser")}</span>
+            <Link className="golink" to="/knotia"><span>{t("learn")}</span><span className="arr" aria-hidden="true">→</span></Link>
           </div>
         </div>
       </section>

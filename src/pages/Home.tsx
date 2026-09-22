@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "../i18n/I18nContext";
 import ImgSlot from "../components/ImgSlot";
-import HeroCarousel from "../components/HeroCarousel";
-import { homeHeroImages, blueMountainImage } from "../data/heroImages";
-
-type Tier = "free" | "paid";
+import PromoHero from "../components/PromoHero";
+import TierTag, { type Tier } from "../components/TierTag";
+import { blueMountainImage } from "../data/heroImages";
 
 const Arrow = () => <span className="arr" aria-hidden="true">→</span>;
-const TierTag = ({ tier }: { tier: Tier }) => {
-  const { t } = useI18n();
-  return <span className={`tier-tag ${tier}`}>{t(tier === "free" ? "tierFree" : "tierPaid")}</span>;
-};
 
 const routerLinks: { key: string; to: string; tier: Tier }[] = [
   { key: "r1", to: "/resources", tier: "paid" },
@@ -18,15 +13,6 @@ const routerLinks: { key: string; to: string; tier: Tier }[] = [
   { key: "r3", to: "/resources", tier: "free" },
   { key: "r4", to: "/become-a-cpa", tier: "free" },
   { key: "r5", to: "/resources", tier: "free" }
-];
-
-const membershipCards: { h: string; p: string; to: string; tier: Tier }[] = [
-  { h: "member1h", p: "member1p", to: "/resources", tier: "free" },
-  { h: "member2h", p: "member2p", to: "/resources", tier: "free" },
-  { h: "member3h", p: "member3p", to: "/learn", tier: "paid" },
-  { h: "member4h", p: "member4p", to: "/resources", tier: "paid" },
-  { h: "member5h", p: "member5p", to: "/become-a-cpa", tier: "free" },
-  { h: "member6h", p: "member6p", to: "/resources", tier: "free" }
 ];
 
 const focusAreas = ["f1", "f2", "f3", "f4", "f5", "f6"];
@@ -48,19 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero">
-        <div className="wrap">
-          <div>
-            <h1>{t("h1")}</h1>
-            <p>{t("lede")}</p>
-            <div className="cta-row">
-              <Link className="btn primary" to="/learn">{t("cta1")}</Link>
-              <Link className="btn ghost" to="/learn">{t("cta2")}</Link>
-            </div>
-          </div>
-          <HeroCarousel className="slant-r" images={homeHeroImages} />
-        </div>
-      </div>
+      <PromoHero />
 
       <div className="router" aria-label="Choose your path">
         <div className="wrap">
@@ -79,18 +53,11 @@ export default function Home() {
 
       <section className="membership">
         <div className="wrap">
-          <div className="sec-head"><h2>{t("memberh")}</h2></div>
-          <p className="membership-intro">{t("memberintro")}</p>
-          <div className="membership-grid">
-            {membershipCards.map((c) => (
-              <article className="membership-card" key={c.h}>
-                <h3>{t(c.h)}</h3>
-                <TierTag tier={c.tier} />
-                <p>{t(c.p)}</p>
-                <Link to={c.to}>{t("membercta")}</Link>
-              </article>
-            ))}
+          <div className="sec-head">
+            <h2>{t("memberh")}</h2>
+            <Link className="golink" to="/membership"><span>{t("memberViewAll")}</span><Arrow /></Link>
           </div>
+          <p className="membership-intro">{t("memberintro")}</p>
         </div>
       </section>
 

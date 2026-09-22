@@ -13,7 +13,7 @@ export const courses: Course[] = [
       fr: "La formation fiscale phare au Canada, offerte par plus de 200 experts. Présenté au Blue Mountain Resort, en Ontario."
     },
     topic: "tax", format: "cert", hours: 120, price: 3495,
-    image: unsplash("1483728642387-6c3bdd6c93e5")
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Blue_Mountain_Ontario_at_night_%28landscape%29.jpg/1280px-Blue_Mountain_Ontario_at_night_%28landscape%29.jpg"
   },
   {
     id: "gst-hst",

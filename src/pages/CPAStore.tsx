@@ -28,7 +28,7 @@ export default function CPAStore() {
       </div>
       <section>
         <div className="wrap">
-          <div className="storebanner">
+          <div className="notice">
             <span className="icon-cart" aria-hidden="true" />
             <span>{t("storeBanner")}</span>
           </div>
