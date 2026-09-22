@@ -55,7 +55,7 @@ export const botAnswers: Record<Lang, BotRule[]> = {
     },
     {
       keywords: ["magasin", "boutique", "acheter", "achat", "publication"],
-      answer: "Le Magasin CPA est maintenant intégré à ce site : même compte, même panier. Parcourez les manuels, cours et outils à partir du lien Magasin CPA dans le menu principal."
+      answer: "La Boutique CPA est maintenant intégrée à ce site : même compte, même panier. Parcourez les manuels, cours et outils à partir du lien Boutique CPA dans le menu principal."
     },
     {
       keywords: ["joindre", "soutien", "aide", "téléphone", "courriel", "mot de passe", "facture", "contact"],

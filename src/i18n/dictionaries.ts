@@ -4,7 +4,7 @@ export type Dictionary = Record<string, string>;
 
 export const chips: Record<Lang, string[]> = {
   en: ["How do I become a CPA?", "Find CPD courses", "Where is the CPA Store?", "Contact support"],
-  fr: ["Comment devenir CPA?", "Trouver des cours de DPC", "Où est le Magasin CPA?", "Joindre le soutien"]
+  fr: ["Comment devenir CPA?", "Trouver des cours de DPC", "Où est la Boutique CPA?", "Joindre le soutien"]
 };
 
 export const dict: Record<Lang, Dictionary> = {
@@ -16,7 +16,7 @@ export const dict: Record<Lang, Dictionary> = {
     home: "Home",
 
     welcomeH: "Welcome to CPA Canada", welcomeP: "Proudly supporting more than 200,000 Chartered Professional Accountants from coast to coast to coast.",
-    navAbout: "About CPA Canada",
+    navAbout: "About",
     aboutMissionH: "Our mission", aboutMissionP: "Supporting, empowering and advocating for the Canadian CPA profession, and protecting the public interest.",
     aboutGovH: "Governance", aboutGovP: "CPA Canada operates alongside provincial and regional CPA bodies, which regulate the profession in their jurisdictions.",
     aboutReachH: "National reach", aboutReachP: "More than 200,000 members across every province and territory, plus students on the path to certification.",
@@ -154,12 +154,12 @@ export const dict: Record<Lang, Dictionary> = {
   fr: {
     skip: "Passer au contenu principal", login: "Connexion", register: "S'inscrire", dark: "Sombre", light: "Clair",
     searchlabel: "Rechercher sur le site", searchph: "Rechercher",
-    nav1: "Devenir CPA", navM: "Adhésion", nav2: "Apprendre et évoluer", nav3: "DPC et ressources", nav5: "Magasin CPA", nav6: "Tax 360",
-    memberh2: "Adhésion", memberViewAll: "Voir toutes les options d'adhésion", cpdH: "DPC gratuit", cpdIntro: "Les séances mensuelles CPA Canada Connect et les points économiques trimestriels — tout au même endroit, gratuitement.", cpdMonthly: "CPA Canada Connect", cpdQuarterly: "Point économique trimestriel", cpdAvailable: "Disponible", cpdAvailableOn: "Disponible le", standardsH: "Normes et directives",
+    nav1: "Devenir CPA", navM: "Adhésion", nav2: "Apprendre et évoluer", nav3: "Formation et ressources", nav5: "Boutique CPA", nav6: "Tax 360",
+    memberh2: "Adhésion", memberViewAll: "Voir toutes les options d'adhésion", cpdH: "Formation sans frais", cpdIntro: "Les séances mensuelles CPA Canada Connect et les points économiques trimestriels — tout au même endroit, gratuitement.", cpdMonthly: "CPA Canada Connect", cpdQuarterly: "Point économique trimestriel", cpdAvailable: "Disponible", cpdAvailableOn: "Disponible le", standardsH: "Normes et directives",
     home: "Accueil",
 
     welcomeH: "Bienvenue à CPA Canada", welcomeP: "Fière de soutenir plus de 200 000 comptables professionnels agréés d'un océan à l'autre.",
-    navAbout: "À propos de CPA Canada",
+    navAbout: "À propos",
     aboutMissionH: "Notre mission", aboutMissionP: "Soutenir, outiller et représenter la profession de CPA au Canada, tout en protégeant l'intérêt public.",
     aboutGovH: "Gouvernance", aboutGovP: "CPA Canada agit aux côtés des ordres provinciaux et régionaux de CPA, qui réglementent la profession dans leur territoire.",
     aboutReachH: "Portée nationale", aboutReachP: "Plus de 200 000 membres dans toutes les provinces et tous les territoires, ainsi que des étudiants en voie de certification.",
@@ -190,10 +190,10 @@ export const dict: Record<Lang, Dictionary> = {
     careerh: "Faites progresser votre carrière", careerall: "Tous les programmes",
     c1img: "Photo : professionnel signant des documents financiers", c1h: "Manuel de CPA Canada", c1p: "Accès gratuit pour les CPA canadiens. La collection essentielle pour les normes d'information financière et de certification.",
     c2img: "Photo : Blue Mountain Resort, Ontario", c2h: "Cours fondamental d'impôt 2026", c2p: "Inscrivez-vous au programme de formation fiscale le plus réputé au Canada, avec plus de 200 experts techniques. Présenté au Blue Mountain Resort, en Ontario.",
-    c3img: "Photo : tableau de bord de perfectionnement professionnel sur un portable", c3h: "DPC gratuit", c3p: "Du perfectionnement professionnel gratuit de calibre mondial, sur demande. Filtrez par sujet, format et heures de DPC.",
-    storebadge: "Maintenant intégré au site", storeh: "Magasin CPA : manuels, cours et outils au même endroit",
+    c3img: "Photo : tableau de bord de perfectionnement professionnel sur un portable", c3h: "Formation sans frais", c3p: "Du perfectionnement professionnel gratuit de calibre mondial, sur demande. Filtrez par sujet, format et heures de DPC.",
+    storebadge: "Maintenant intégré au site", storeh: "Boutique CPA : manuels, cours et outils au même endroit",
     storep: "Fini le site distinct. Parcourez le catalogue complet, gérez vos factures et payez sans quitter cpacanada.ca.",
-    storecta: "Visiter le Magasin CPA", storeimg: "Photo : expérience de caisse en magasin",
+    storecta: "Visiter la Boutique CPA", storeimg: "Photo : expérience de caisse en magasin",
     newsh: "Dans l'actualité", newsall: "Lire la suite",
     n1img: "Photo : écrans de graphiques boursiers", n1d: "10 juillet 2026", n1h: "Jeu ou placement? Les marchés prédictifs brouillent la frontière", n1p: "Les Canadiens devront bientôt décider s'ils font un placement ou un pari.",
     n2img: "Photo : examen de documents financiers", n2d: "2 juillet 2026", n2h: "Ce CPA cherche la vérité derrière les chiffres", n2p: "De l'exercice public à la GRC, le CPA Guy Paul Larocque fait parler les chiffres pour découvrir la vérité.",
@@ -207,7 +207,7 @@ export const dict: Record<Lang, Dictionary> = {
     chatlaunch: "Demander à CPA Assist", chath: "CPA Assist", chatsub: "Programmes, cours, normes. Posez vos questions",
     chatph: "Écrivez votre question…", chatnote: "Assistant de démonstration à réponses scriptées. En production : IA avec recherche en direct.",
     chatHello: "Bonjour! Je suis CPA Assist. Je peux vous orienter vers les programmes, cours, normes et directives du site. Que cherchez-vous?",
-    chatFallback: "Je veux vous orienter au bon endroit. Essayez de demander comment devenir CPA, les cours et le DPC, les manuels, le Magasin CPA, ou comment joindre le soutien. Vous pouvez aussi utiliser la barre de recherche ci-dessus.",
+    chatFallback: "Je veux vous orienter au bon endroit. Essayez de demander comment devenir CPA, les cours et le DPC, les manuels, la Boutique CPA, ou comment joindre le soutien. Vous pouvez aussi utiliser la barre de recherche ci-dessus.",
 
     bh1: "Devenir CPA",
     blede: "Trouvez votre voie vers le titre comptable le plus respecté au Canada. Répondez à trois questions rapides et nous vous indiquerons le bon cheminement.",
@@ -218,11 +218,11 @@ export const dict: Record<Lang, Dictionary> = {
     bc3img: "Photo : professionnels se serrant la main", bc3h: "Ordres provinciaux et régionaux", bc3p: "L'inscription, les frais et les dates d'admission sont gérés par l'ordre de CPA de votre région.",
     portalBadge: "Portail étudiant", portalTeaser: "Vous n'avez pas encore reçu vos identifiants Knotia? Voici quoi faire.",
     knotiaLede: "Votre espace en ligne pour les normes, publications et votre compte étudiant CPA Canada.",
-    knotiaCpaH: "Pour les CPA", knotiaPubH: "Vos achats du Magasin CPA", knotiaPubP: "Tout ce que vous avez acheté au Magasin CPA — cours, guides, publications — est accessible ici.",
+    knotiaCpaH: "Pour les CPA", knotiaPubH: "Vos achats de la Boutique CPA", knotiaPubP: "Tout ce que vous avez acheté à la Boutique CPA — cours, guides, publications — est accessible ici.",
     knotiaStudentH: "Pour les étudiants : accéder à votre compte", knotiaStudentP: "Les comptes étudiants Knotia sont créés automatiquement à partir des dossiers reçus de votre ordre provincial ou régional de CPA — aucune inscription distincte n'est requise. Si vous n'avez pas reçu vos identifiants ou un courriel de réinitialisation de mot de passe, vérifiez d'abord vos courriels indésirables, puis communiquez directement avec votre ordre provincial : c'est uniquement par son intermédiaire que nous pouvons obtenir vos renseignements. Une fois vos identifiants reçus de votre ordre provincial, nous mettons à jour notre système et vous donnons accès à vos publications étudiantes.",
 
-    rh1: "DPC et ressources", read: "Lire",
-    rlede: "Des séances de DPC gratuites, ainsi que les directives, normes et outils pour garder votre information financière à jour et fiable.",
+    rh1: "Formation et ressources", read: "Lire",
+    rlede: "Des séances de formation sans frais, ainsi que les directives, normes et outils pour garder votre information financière à jour et fiable.",
     rc1h: "Normes IFRS", rc1p: "Mises à jour, notes et guides de transition pour les entités ayant une obligation d'information du public.",
     rc2h: "NCECF", rc2p: "Les normes pour entreprises à capital fermé, expliquées avec des exemples pratiques.",
     rc3h: "OSBL", rc3p: "Directives de présentation et de divulgation adaptées au secteur sans but lucratif.",
@@ -238,7 +238,7 @@ export const dict: Record<Lang, Dictionary> = {
 
     lh1: "Apprendre et évoluer",
     llede: "Un seul catalogue pour tout : perfectionnement professionnel, certificats, manuels et outils, avec de vrais filtres plutôt que des listes de liens interminables.",
-    lbanner: "Explorez l'apprentissage et le perfectionnement ici. Visitez séparément le Magasin CPA lorsque vous êtes prêt à acheter ou à vous inscrire.",
+    lbanner: "Explorez l'apprentissage et le perfectionnement ici. Visitez séparément la Boutique CPA lorsque vous êtes prêt à acheter ou à vous inscrire.",
     lsearchph: "Rechercher dans le catalogue", lfree: "Gratuit seulement",
     lallTopics: "Tous les sujets", lallFormats: "Tous les formats", lhours: "heures de DPC", lfreeTag: "Gratuit", lnone: "Aucun résultat. Essayez de retirer un filtre.",
     topicTax: "Fiscalité", topicAudit: "Audit et certification", topicFinrep: "Information financière", topicTech: "Technologie", topicSust: "Durabilité", topicLead: "Leadership",
@@ -249,12 +249,12 @@ export const dict: Record<Lang, Dictionary> = {
     taxImg1: "La fiscalité en pratique", taxImg2: "Conversations de la communauté", taxImg3: "Ressources fiscales",
     taxCard1h: "Explications pratiques", taxCard1p: "Rendez les sujets fiscaux complexes plus faciles à comprendre grâce à des contenus concis et utiles.",
     taxCard2h: "Participez à la conversation", taxCard2p: "Découvrez des publications, points de vue et mises à jour conçus pour la communauté fiscale.",
-    taxCard3h: "Allez plus loin", taxCard3p: "Complétez le contenu de Tax 360 avec des cours, normes et ressources du Magasin CPA.",
+    taxCard3h: "Allez plus loin", taxCard3p: "Complétez le contenu de Tax 360 avec des cours, normes et ressources de la Boutique CPA.",
     follow: "Suivre Tax 360", social: "Voir les réseaux sociaux", browse: "Parcourir les formations",
 
-    storeTitle: "Magasin CPA", storeLede: "Achetez des manuels, cours, certificats et outils pratiques dans une destination dédiée.",
+    storeTitle: "Boutique CPA", storeLede: "Achetez des manuels, cours, certificats et outils pratiques dans une destination dédiée.",
     storeBanner: "Parcourez les produits ici. L'apprentissage et le perfectionnement restent accessibles séparément dans Apprendre et évoluer.",
-    storeSearch: "Rechercher dans le Magasin CPA", allCategories: "Toutes les catégories", handbooks: "Manuels et normes", courses: "Cours et certificats", tools: "Outils et publications",
+    storeSearch: "Rechercher dans la Boutique CPA", allCategories: "Toutes les catégories", handbooks: "Manuels et normes", courses: "Cours et certificats", tools: "Outils et publications",
     storeCard1h: "Manuel de CPA Canada", storeCard1p: "Les normes essentielles d'information financière et de certification pour les CPA canadiens.",
     storeCard2h: "Cours professionnels", storeCard2p: "Inscrivez-vous à des programmes et certificats conçus pour les professionnels.",
     storeCard3h: "Outils pratiques", storeCard3p: "Trouvez des guides, publications et ressources pour le travail quotidien.",
@@ -271,7 +271,7 @@ export const dict: Record<Lang, Dictionary> = {
     coSubtotal: "Sous-total", coTax: "TVH (13 %)", coTotal: "Total", coPlaceOrder: "Passer la commande",
     coSecureNote: "Paiement de démonstration conceptuelle — aucune transaction réelle n'a lieu.",
     coConfirmH: "Commande confirmée", coConfirmP: "Merci pour votre commande. Dans le produit complet, un courriel de confirmation et un reçu seraient envoyés ici.",
-    coOrderNum: "Numéro de commande :", coBackToStore: "Retour au Magasin CPA",
+    coOrderNum: "Numéro de commande :", coBackToStore: "Retour à la Boutique CPA",
     itemHandbook: "Manuel de CPA Canada", itemCourse: "Cours professionnels", itemTools: "Outils pratiques",
 
     newscrumb: "Nouvelles et perspectives",
