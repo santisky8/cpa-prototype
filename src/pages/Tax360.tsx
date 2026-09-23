@@ -4,9 +4,9 @@ import HeroCarousel from "../components/HeroCarousel";
 import { taxHeroImages } from "../data/heroImages";
 
 const cards = [
-  { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85", imgKey: "taxImg1", h: "taxCard1h", p: "taxCard1p", ctaKey: "follow", href: "#", internal: false },
+  { img: "https://images.unsplash.com/photo-1689330305908-aa231c1dd595?auto=format&fit=crop&w=900&q=85", imgKey: "taxImg1", h: "taxCard1h", p: "taxCard1p", ctaKey: "follow", href: "#", internal: false },
   { img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85", imgKey: "taxImg2", h: "taxCard2h", p: "taxCard2p", ctaKey: "social", href: "#", internal: false },
-  { img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=85", imgKey: "taxImg3", h: "taxCard3h", p: "taxCard3p", ctaKey: "browse", href: "/learn", internal: true }
+  { img: "https://images.unsplash.com/photo-1606327054517-6bf0b2e84cc4?auto=format&fit=crop&w=900&q=85", imgKey: "taxImg3", h: "taxCard3h", p: "taxCard3p", ctaKey: "browse", href: "/learn", internal: true }
 ];
 
 export default function Tax360() {

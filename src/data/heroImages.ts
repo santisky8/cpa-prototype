@@ -14,6 +14,11 @@ export const cpaHeroImages: CarouselImage[] = [
   { src: unsplash("1600880292203-757bb62b4baf", 1000), alt: "Students discussing coursework over coffee" }
 ];
 
+export const membershipHeroImages: CarouselImage[] = [
+  { src: unsplash("1672380135241-c024f7fbfa13", 1000), alt: "Two professionals shaking hands over a business agreement" },
+  { src: unsplash("1718209881007-c0ecdfc00f9d", 1000), alt: "Confident professional member standing with arms crossed" }
+];
+
 export const learnHeroImages: CarouselImage[] = [
   { src: unsplash("1524178232363-1fb2b075b655", 1000), alt: "Professional development seminar in progress" },
   { src: unsplash("1460925895917-afdab827c52f", 1000), alt: "Laptop displaying a learning progress dashboard" }
@@ -27,6 +32,11 @@ export const reportingHeroImages: CarouselImage[] = [
 export const storeHeroImages: CarouselImage[] = [
   { src: unsplash("1524995997946-a1c2e315a42f", 1000), alt: "Bright modern library with curved bookshelves" },
   { src: unsplash("1513475382585-d06e58bcb0e0", 1000), alt: "Selecting a book from a well-stocked shelf" }
+];
+
+export const checkoutHeroImages: CarouselImage[] = [
+  { src: unsplash("1563013544-824ae1b704d3", 1000), alt: "Entering payment card details on a laptop" },
+  { src: unsplash("1733503747506-773e56e4078f", 1000), alt: "Reviewing an order summary before checkout" }
 ];
 
 export const articleHeroImages: CarouselImage[] = [

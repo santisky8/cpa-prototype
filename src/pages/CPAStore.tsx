@@ -4,8 +4,8 @@ import HeroCarousel from "../components/HeroCarousel";
 import { storeHeroImages } from "../data/heroImages";
 
 const products = [
-  { key: "handbook", h: "storeCard1h", p: "storeCard1p", price: "$189.00", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85" },
-  { key: "course", h: "storeCard2h", p: "storeCard2p", price: "$449.00", img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=85" },
+  { key: "handbook", h: "storeCard1h", p: "storeCard1p", price: "$189.00", img: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=85" },
+  { key: "course", h: "storeCard2h", p: "storeCard2p", price: "$449.00", img: "https://images.unsplash.com/photo-1663524789611-2c8330848379?auto=format&fit=crop&w=900&q=85" },
   { key: "tools", h: "storeCard3h", p: "storeCard3p", price: "$59.00", img: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85" }
 ];
 

@@ -27,14 +27,14 @@ export default function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const items: NavItem[] = [
+    { to: "/about", label: t("navAbout") },
     { to: "/become-a-cpa", label: t("nav1") },
     { to: "/membership", label: t("navM") },
     { to: "/learn", label: t("nav2") },
     { to: "/resources", label: t("nav3") },
     { to: "/tax-360", label: t("nav6") },
     { to: "/cpastore", label: t("nav5"), className: "store" },
-    { to: "/knotia", label: "Knotia" },
-    { to: "/about", label: t("navAbout") }
+    { to: "/knotia", label: "Knotia" }
   ];
 
   useLayoutEffect(() => {

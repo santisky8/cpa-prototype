@@ -1,4 +1,5 @@
 import type { Course } from "../types";
+import { blueMountainImage } from "./heroImages";
 
 function unsplash(id: string, w = 900, q = 88): string {
   return `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=${q}`;
@@ -13,7 +14,7 @@ export const courses: Course[] = [
       fr: "La formation fiscale phare au Canada, offerte par plus de 200 experts. Présenté au Blue Mountain Resort, en Ontario."
     },
     topic: "tax", format: "cert", hours: 120, price: 3495,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Blue_Mountain_Ontario_at_night_%28landscape%29.jpg/1280px-Blue_Mountain_Ontario_at_night_%28landscape%29.jpg"
+    image: blueMountainImage
   },
   {
     id: "gst-hst",
@@ -23,7 +24,7 @@ export const courses: Course[] = [
       fr: "Les bases pratiques de la conformité en taxes indirectes."
     },
     topic: "tax", format: "ondemand", hours: 8, price: 399,
-    image: unsplash("1454165804606-c3d57bc86b40")
+    image: unsplash("1775163024488-e88e4a71179f")
   },
   {
     id: "audit-quality",
@@ -33,7 +34,7 @@ export const courses: Course[] = [
       fr: "Renforcez la qualité des missions, de la planification au rapport."
     },
     topic: "audit", format: "virtual", hours: 12, price: 549,
-    image: unsplash("1531482615713-2afd69097998")
+    image: unsplash("1758518727613-00192aed759b")
   },
   {
     id: "data-analytics",
@@ -103,7 +104,7 @@ export const courses: Course[] = [
       fr: "L'analyse de notre économiste en chef sur l'économie canadienne."
     },
     topic: "lead", format: "ondemand", hours: 2, price: 0,
-    image: unsplash("1590283603385-17ffb3a7f29f")
+    image: unsplash("1762427354397-854a52e0ded7")
   },
   {
     id: "leading-teams",

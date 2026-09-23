@@ -75,6 +75,7 @@ export const dict: Record<Lang, Dictionary> = {
     bc3img: "Photo: professionals shaking hands", bc3h: "Provincial and regional bodies", bc3p: "Registration, fees and admission dates are handled by the CPA body where you live.",
     portalBadge: "Student portal", portalTeaser: "Haven't received your Knotia login yet? Here's what to do.",
     knotiaLede: "Your online home for CPA Canada standards, publications and your student account.",
+    knotiaGoTo: "Go to Knotia.ca",
     knotiaCpaH: "For CPAs", knotiaPubH: "Your CPA Store purchases", knotiaPubP: "Anything you've bought from the CPA Store — courses, guides, publications — shows up here, ready to access.",
     knotiaStudentH: "For students: accessing your account", knotiaStudentP: "Student Knotia accounts are created automatically using the records we receive from your provincial or regional CPA body — there's nothing to sign up for separately. If you haven't received your login or a password-reset email, check your spam or junk folder first, then contact your provincial body directly: it's only through them that we can get your corresponding information. Once we receive your credentials from your provincial body, we update our system and give you access to your student publications.",
 
@@ -218,6 +219,7 @@ export const dict: Record<Lang, Dictionary> = {
     bc3img: "Photo : professionnels se serrant la main", bc3h: "Ordres provinciaux et régionaux", bc3p: "L'inscription, les frais et les dates d'admission sont gérés par l'ordre de CPA de votre région.",
     portalBadge: "Portail étudiant", portalTeaser: "Vous n'avez pas encore reçu vos identifiants Knotia? Voici quoi faire.",
     knotiaLede: "Votre espace en ligne pour les normes, publications et votre compte étudiant CPA Canada.",
+    knotiaGoTo: "Aller sur Knotia.ca",
     knotiaCpaH: "Pour les CPA", knotiaPubH: "Vos achats de la Boutique CPA", knotiaPubP: "Tout ce que vous avez acheté à la Boutique CPA — cours, guides, publications — est accessible ici.",
     knotiaStudentH: "Pour les étudiants : accéder à votre compte", knotiaStudentP: "Les comptes étudiants Knotia sont créés automatiquement à partir des dossiers reçus de votre ordre provincial ou régional de CPA — aucune inscription distincte n'est requise. Si vous n'avez pas reçu vos identifiants ou un courriel de réinitialisation de mot de passe, vérifiez d'abord vos courriels indésirables, puis communiquez directement avec votre ordre provincial : c'est uniquement par son intermédiaire que nous pouvons obtenir vos renseignements. Une fois vos identifiants reçus de votre ordre provincial, nous mettons à jour notre système et vous donnons accès à vos publications étudiantes.",
 

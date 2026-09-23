@@ -3,7 +3,7 @@ import { useI18n } from "../i18n/I18nContext";
 import ImgSlot from "../components/ImgSlot";
 import PromoHero from "../components/PromoHero";
 import TierTag, { type Tier } from "../components/TierTag";
-import { blueMountainImage } from "../data/heroImages";
+const c2Image = "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?auto=format&fit=crop&w=900&q=85";
 
 const Arrow = () => <span className="arr" aria-hidden="true">→</span>;
 
@@ -19,7 +19,7 @@ const focusAreas = ["f1", "f2", "f3", "f4", "f5", "f6"];
 
 const careerCards = [
   { img: "c1img", h: "c1h", p: "c1p", cta: "learn" },
-  { img: "c2img", h: "c2h", p: "c2p", cta: "register", directImage: blueMountainImage },
+  { img: "c2img", h: "c2h", p: "c2p", cta: "register", directImage: c2Image },
   { img: "c3img", h: "c3h", p: "c3p", cta: "learn" }
 ];
 

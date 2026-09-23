@@ -3,6 +3,7 @@ import { useI18n } from "../i18n/I18nContext";
 import HeroCarousel from "../components/HeroCarousel";
 import ComplimentaryCPD from "../components/ComplimentaryCPD";
 import { reportingHeroImages } from "../data/heroImages";
+import { resourcesImages } from "../data/topicImages";
 
 const tiles = ["rc1", "rc2", "rc3", "rc4", "rc5", "rc6"];
 const guidance = ["rg1", "rg2", "rg3", "rg4", "rg5"];
@@ -35,6 +36,7 @@ export default function Resources() {
           <div className="focus">
             {tiles.map((k) => (
               <div className="tile" key={k}>
+                <div className="tile-img" style={{ backgroundImage: `url('${resourcesImages[k as keyof typeof resourcesImages]}')` }} />
                 <h3>{t(`${k}h`)}</h3>
                 <p>{t(`${k}p`)}</p>
                 <a className="golink" href="#">

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "../i18n/I18nContext";
+import { aboutImages } from "../data/topicImages";
 
 export default function About() {
   const { t } = useI18n();
@@ -18,9 +19,18 @@ export default function About() {
       <section>
         <div className="wrap">
           <div className="focus">
-            <div className="tile"><h3>{t("aboutMissionH")}</h3><p>{t("aboutMissionP")}</p></div>
-            <div className="tile"><h3>{t("aboutGovH")}</h3><p>{t("aboutGovP")}</p></div>
-            <div className="tile"><h3>{t("aboutReachH")}</h3><p>{t("aboutReachP")}</p></div>
+            <div className="tile">
+              <div className="tile-img" style={{ backgroundImage: `url('${aboutImages.mission}')` }} />
+              <h3>{t("aboutMissionH")}</h3><p>{t("aboutMissionP")}</p>
+            </div>
+            <div className="tile">
+              <div className="tile-img" style={{ backgroundImage: `url('${aboutImages.governance}')` }} />
+              <h3>{t("aboutGovH")}</h3><p>{t("aboutGovP")}</p>
+            </div>
+            <div className="tile">
+              <div className="tile-img" style={{ backgroundImage: `url('${aboutImages.reach}')` }} />
+              <h3>{t("aboutReachH")}</h3><p>{t("aboutReachP")}</p>
+            </div>
           </div>
         </div>
       </section>

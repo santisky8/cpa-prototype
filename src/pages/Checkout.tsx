@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useI18n } from "../i18n/I18nContext";
 import type { SavedAddress, StoreItem } from "../types";
 import HeroCarousel from "../components/HeroCarousel";
-import { storeHeroImages } from "../data/heroImages";
+import { checkoutHeroImages } from "../data/heroImages";
 
 const ITEMS: Record<string, StoreItem> = {
   handbook: { key: "itemHandbook", price: 189.0 },
@@ -155,7 +155,7 @@ export default function Checkout() {
             <p>{t("coLede")}</p>
           </div>
         </div>
-        <HeroCarousel className="pagehero-media" images={storeHeroImages} />
+        <HeroCarousel className="pagehero-media" images={checkoutHeroImages} />
       </div>
       <section><div className="wrap">
         <form className="checkout-grid" onSubmit={handleSubmit} noValidate>

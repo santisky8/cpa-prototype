@@ -4,9 +4,9 @@ import HeroCarousel from "../components/HeroCarousel";
 import { articleHeroImages } from "../data/heroImages";
 
 const related = [
-  { img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=90", tagKey: "arel1t", titleKey: "arel1", to: "/learn" },
-  { img: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=900&q=90", tagKey: "arel1t", titleKey: "arel2", to: "/learn" },
-  { img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=85", tagKey: "arel3t", titleKey: "arel3", to: "/resources" }
+  { img: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=900&q=90", tagKey: "arel1t", titleKey: "arel1", to: "/learn" },
+  { img: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=900&q=90", tagKey: "arel1t", titleKey: "arel2", to: "/learn" },
+  { img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&q=85", tagKey: "arel3t", titleKey: "arel3", to: "/resources" }
 ];
 
 export default function Article() {
